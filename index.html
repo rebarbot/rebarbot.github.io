@@ -196,11 +196,13 @@
         <div class="content has-text-justified">
           <p>
             Complex manipulation remains a main bottleneck in autonomous robotic rebar cage assembly. 
-            To address this challenge, this paper presents the first implementation of challenging rebar insertion and tying at complex intersections. 
+            To address this challenge, this paper presents the first implementation of two challenging tasks: 
+            rebar insertion and rebar tying at complex intersections. 
             A manipulation framework is proposed combining visual servoing and imitation learning (IL), 
-            which requires no prior modeling of rebars or the scene and is adaptable to various manipulation tasks. 
-            The proposed policies demonstrate over 90% success rates in both rebar insertion and tying tasks in real-world robotic experiments. 
-            Furthermore, leveraging segmentation and state estimation modules yields a 33.4% improvement in the success rate of loose insertions over the IL baseline.
+            which requires no depth cameras, prior modeling of rebars or the scene and is adaptable to various manipulation tasks. 
+            The proposed policies demonstrate over 90\% success rates in both rebar insertion and tying tasks in real-world robotic experiments. 
+            Furthermore, leveraging segmentation and state estimation modules yields a 33.4\% improvement in the success rate of loose insertions over the IL baseline, 
+            and demonstrates rapid adaptability across varying background conditions.
           </p>
         </div>
       </div>
@@ -251,6 +253,132 @@
     <div class="video-grid" style="--cols: 3; --row-height: 200px;">
       <!-- Video #1 -->
       <video autoplay controls muted loop playsinline>
+        <source src="static/videos/insertion/good/good3_typ1_crop.mp4" type="video/mp4">
+      </video>
+      <!-- Video #2 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="static/videos/insertion/good/good2_typ1_crop.mp4" type="video/mp4">
+      </video>
+      <!-- Video #3 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="static/videos/insertion/good/good55_typ1_crop.mp4" type="video/mp4">
+      </video>
+      <!-- Video #4 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="static/videos/insertion/good/good1_typ1_add_crop_1.mp4" type="video/mp4">
+      </video>
+
+      <!-- Video #5 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="static/videos/insertion/good/good2_typ2_crop.mp4" type="video/mp4">
+      </video>
+
+      <!-- Video #6 -->
+      <video autoplay controls muted loop playsinline>
+      <source src="static/videos/insertion/good/good8_typ2_crop.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3">Unseen slots and backgrounds (Insertion)</h2>
+    <p class="content">
+      We tested our insertion policy on two types of stirrup rebars,
+    </p>
+
+    <!-- Set --cols on this element to control number of columns -->
+    <div class="video-grid" style="--cols: 3; --row-height: 200px;">
+      <!-- Video #1 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good1.mp4" type="video/mp4">
+      </video>
+      <!-- Video #2 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good_case2.mp4" type="video/mp4">
+      </video>
+      <!-- Video #3 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good_case3.mp4" type="video/mp4">
+      </video>
+      <!-- Video #4 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good_case4.mp4" type="video/mp4">
+      </video>
+
+      <!-- Video #5 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good_case5.mp4" type="video/mp4">
+      </video>
+
+      <!-- Video #6 -->
+      <video autoplay controls muted loop playsinline>
+      <source src="./static/videos/tying/PR_good_case6.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3">Unseen intersections(Tying)</h2>
+    <p class="content">
+      We tested our insertion policy on two types of stirrup rebars,
+    </p>
+
+    <!-- Set --cols on this element to control number of columns -->
+    <div class="video-grid" style="--cols: 3; --row-height: 200px;">
+      <!-- Video #1 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good1.mp4" type="video/mp4">
+      </video>
+      <!-- Video #2 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good_case2.mp4" type="video/mp4">
+      </video>
+      <!-- Video #3 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good_case3.mp4" type="video/mp4">
+      </video>
+      <!-- Video #4 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good_case4.mp4" type="video/mp4">
+      </video>
+
+      <!-- Video #5 -->
+      <video autoplay controls muted loop playsinline>
+        <source src="./static/videos/tying/PR_good_case5.mp4" type="video/mp4">
+      </video>
+
+      <!-- Video #6 -->
+      <video autoplay controls muted loop playsinline>
+      <source src="./static/videos/tying/PR_good_case6.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3">Failure Cases</h2>
+    <p class="content">
+      We tested our insertion policy on two types of stirrup rebars,
+    </p>
+
+    <!-- Set --cols on this element to control number of columns -->
+    <div class="video-grid" style="--cols: 3; --row-height: 200px;">
+      <!-- Video #1 -->
+      <video autoplay controls muted loop playsinline>
         <source src="./static/videos/tying/PR_good1.mp4" type="video/mp4">
       </video>
       <!-- Video #2 -->
@@ -285,11 +413,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{
 }</code></pre>
   </div>
 </section>

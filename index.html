@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Rebar Cage Assembly with a Mobile Manipulator Enhanced by Imitation Learning.">
+        content="Mobile Robotic Rebar Assembly Enhanced by Imitation Learning.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rebar Cage Assembly with a Mobile Manipulator Enhanced by Imitation Learning</title>
+  <title>Mobile Robotic Rebar Assembly Enhanced by Imitation Learning</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -82,7 +82,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Rebar Cage Assembly with a Mobile Manipulator Enhanced by Imitation Learning</h1>
-          <!-- <div class="is-size-5 publication-authors">
+          <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://www.shao-lab.com/Team-c7cad4a2a33a4d7686e0b6e8a524b816">Tao Sun</a><sup>1,2</sup>,</span>
             <span class="author-block">
@@ -90,7 +90,7 @@
               <a href="https://scholar.google.com/citations?user=LVjU7xIAAAAJ&hl=en">Beining Han</a><sup>2</sup>,</span>
             <span class="author-block">
 
-              <a href="https://jimmyyhwu.github.io/">Jimmy Wu</a><sup>2,3</sup>, </span>
+              <a href="https://jimmyyhwu.github.io/">Jimmy Wu</a><sup>2</sup>, </span>
             <span class="author-block">
 
               <a href="https://www.cs.princeton.edu/~smr/">Szymon Rusinkiewicz</a><sup>2</sup>,</span>
@@ -103,8 +103,7 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>McGill University,</span>
             <span class="author-block"><sup>2</sup>Princeton University</span>
-            <span class="author-block"><sup>3</sup>Stanford University</span>
-          </div> -->
+          </div>
 
 
 
@@ -195,14 +194,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Complex manipulation remains a main bottleneck in autonomous robotic rebar cage assembly. 
-            To address this challenge, this paper presents the first implementation of two challenging tasks: 
-            rebar insertion and rebar tying at complex intersections. 
-            A manipulation framework is proposed combining visual servoing and imitation learning (IL), 
-            which requires no depth cameras, prior modeling of rebars or the scene and is adaptable to various manipulation tasks. 
-            The proposed policies demonstrate over 90\% success rates in both rebar insertion and tying tasks in real-world robotic experiments. 
-            Furthermore, leveraging segmentation and state estimation modules yields a 33.4\% improvement in the success rate of loose insertions over the IL baseline, 
-            and demonstrates rapid adaptability across varying background conditions.
+            Manipulation remains a key bottleneck in achieving fully autonomous rebar cage assembly. 
+            Existing solutions based on rail‑guided systems are expensive, poorly scalable, and limited in capability. 
+            This work introduces a framework that leverages a mobile manipulator and uses visual servoing together with imitation learning (IL) 
+            to address complex rebar manipulation tasks. 
+            Our  framework enables, for the first time, autonomous execution of two challenging manipulation tasks: 
+            (a) tight-fit rebar slot insertion and (b) rebar tying at complex intersection nodes within cages. 
+            Using only low-cost RGB cameras, our approach achieves over 90\% success on both tasks. 
+            A highlight is the integration of a segmentation module and a reinsertion strategy that improves tight-fit insertion performance by 41.7\% 
+            over the baseline and significantly improves robustness to background changes. Notably, the system requires neither depth sensors 
+            nor explicit geometric modeling, and supports rapid deployment in novel environments. 
+            This work establishes a foundation for extending autonomy to broader rebar manipulation scenarios
           </p>
         </div>
       </div>
